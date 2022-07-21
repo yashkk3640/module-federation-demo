@@ -47,6 +47,9 @@ module.exports = {
       exposes: {
         "./Counter": "./src/Counter.js",
         "./counterWrapper": "./src/counterWrapper.js",
+        "./Header": "./src/components/Header.js",
+        "./Footer": "./src/components/Footer.js",
+        "./sortByName": "./src/functions/sortWithLodash.js",
       },
       shared: {
         ...deps,
