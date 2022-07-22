@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Counter from "remote/Counter";
 import Footer from "remote/Footer";
 import Header from "remote/Header";
-// import images from "remote/images/like.png";
 import sortByName from "remote/sortByName";
 import "./index.scss";
 
