@@ -6,6 +6,20 @@ import Header from "remote/Header";
 import sortByName from "remote/sortByName";
 import "./index.scss";
 
+const callRemoveFun = () => {
+  const sortedData = sortByName([
+    { name: "Yash", age: 24 },
+    { name: "Prakash Dudhat", age: 24 },
+    { name: "Maulik Shah", age: 34 },
+    { name: "Shubham Jayswal", age: 24 },
+    { name: "Abdulmaliq", age: 34 },
+    { name: "Meet Odedara", age: 22 },
+    { name: "Samjot Singh", age: 30 },
+    { name: "Piyush Kanani", age: 22 },
+  ]);
+  console.log({ sortedData });
+};
+
 const App = () => (
   <>
     <Header />
@@ -13,13 +27,8 @@ const App = () => (
       <div className="text-2xl">Host Application (with React Js)</div>
       <Counter />
     </div>
-    {JSON.stringify(
-      sortByName([
-        { name: "Yash", age: 24 },
-        { name: "Prakash", age: 24 },
-        { name: "Maulik", age: 34 },
-      ])
-    )}
+    <br />
+    <button onClick={callRemoveFun}>Print Sorted Array</button>
     <Footer />
   </>
 );
